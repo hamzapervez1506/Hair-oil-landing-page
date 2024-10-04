@@ -1,0 +1,1201 @@
+<!DOCTYPE html><html lang="el"><head>
+<meta charset="UTF-8">
+<!-- Meta WINDOW Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3912294915721860');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3912294915721860&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End WINDOW Meta Pixel Code -->
+
+<script>
+    // Function to get URL parameters
+    function getUrlParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Assign the clickid value to the hidden input
+    document.addEventListener('DOMContentLoaded', function() {
+        const clickid = getUrlParam('clickid'); // Get clickid from URL
+        if (clickid) {
+            document.getElementById('clickid').value = clickid; // Set the hidden input value
+        }
+    });
+
+
+// Function to get all URL parameters and log them to the console
+function logUrlParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Log each parameter to the console
+    urlParams.forEach((value, key) => {
+        console.log(`${key}: ${value}`);
+    });
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    logUrlParams();
+});
+
+// Function to log all hidden form field values to the console
+function logHiddenFormFields() {
+    // Select all hidden input fields in the form
+    const hiddenFields = document.querySelectorAll('input[type="hidden"]');
+
+    // Loop through each hidden field and log its name and value
+    hiddenFields.forEach(field => {
+console.log(`Field Name: ${field.name}, Field Value: ${field.value}`);
+    });
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    logHiddenFormFields();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.order-form');
+    
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            
+            const clickid = document.getElementById('clickid').value; // Get the clickid value
+            if (clickid) {
+                // Send the clickid to the URL in the background
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', `https://gtm.LjZ8vfvxCPPc.blog/click?clickid=${clickid}`, true);
+                xhr.send();
+                
+                // Log the click ID to the console
+                console.log(`ClickID sent: ${clickid} to https://gtm.LjZ8vfvxCPPc.blog/click?clickid=${clickid}`);
+            } else {
+                console.log('No clickid found.');
+            }
+
+            // Log that the form is about to be submitted
+            console.log('Form is being submitted...');
+
+            // After processing the clickid, submit the form
+            form.submit(); // Submit the form
+        });
+    } else {
+        console.log('Form not found.');
+    }
+});
+
+
+
+
+
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K57Z36WM');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex B+ Spray</title>
+  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 5px;
+            border-bottom: 0px solid #ccc;
+        }
+
+        .header h1 {
+            color: red;
+            font-size: 25px;
+        }
+
+        .offer-banner {
+            background-color: #fff;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 0px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info {
+            width: 60%;
+        }
+
+        .product-info h2 {
+            color: #333;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: green;
+            font-size: 35px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .price del {
+            color: red;
+            font-size: 35px;
+            margin-left: 10px;
+        }
+
+        .availability {
+            color: orange;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .features {
+            list-style-type: none;
+            padding: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+        }
+
+        .features li:before {
+            content: '✔';
+            color: green;
+            margin-right: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .product-image img {
+            max-width: 80%;
+            border-radius: 10px;
+        }
+
+        .cta-footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .cta-footer span {
+            font-size: 20px;
+            color: #ff69b4;
+        }
+
+        .next-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .next-section img {
+            max-width: 300px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+        }
+
+        .next-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .benefits {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .benefits li {
+            margin: 10px 0;
+            color: #ff69b4;
+        }
+
+        .benefits li:before {
+            content: '⬤';
+            color: #ff69b4;
+            margin-right: 10px;
+        }
+
+        .secret-tip {
+            background-color: #e6f2d1;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .cta-green-button {
+            background-color: green;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+
+        }
+
+        .third-section {
+            text-align: center;
+            margin: 40px 20px;
+        }
+
+        .third-section img {
+            max-width: 400px;
+            margin: 10px;
+        }
+
+        .third-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 10px auto;
+            color: #333;
+        }
+
+        .third-section .offer {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            background-color: transparent;
+        }
+
+        .third-section .features {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .third-section .features li {
+            text-align: left;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .third-section .features li:before {
+            content: '✔';
+            color: green;
+            margin-right: 10px;
+        }
+
+        /* New Section: Customer Ratings & Testimonials */
+        .ratings-section {
+            text-align: center;
+            margin: 40px 20px;
+        }
+
+        .ratings-header {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .ratings-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .ratings-bar .stars {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .rating-bar-bg {
+            background-color: #e0e0e0;
+            width: 200px;
+            height: 15px;
+            border-radius: 5px;
+        }
+
+        .rating-bar-fill {
+            background-color: #f8d64e;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .testimonial-item {
+            width: 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .testimonial-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .product-section, .third-section, .ratings-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-info, .product-image, .third-section img, .testimonial-item {
+                width: 100%;
+            }
+
+            .header h1 {
+                font-size: 16px;
+            }
+
+            .offer-banner {
+                font-size: 18px;
+            }
+
+            .price {
+                font-size: 20px;
+            }
+        }
+
+        /* For mobile view */
+@media (max-width: 768px) {
+    .price {
+        font-size: 30px; /* Adjust this value for the green price on mobile */
+        color: green;
+        font-weight: bold;
+    }
+
+    .price del {
+        font-size: 30px; /* Adjust this value for the red price on mobile */
+        color: red;
+        margin-left: 10px;
+    }
+}
+
+
+/* Floating bar styles */
+.floating-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Reduce spacing between items */
+.floating-bar .offer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 20px; /* Adjust to bring it closer to the button */
+    flex-grow: 1; /* Ensures less space between items */
+    text-align: right;
+}
+
+.button-wrapper {
+    padding: 0;
+}
+
+.order-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    border: 2px solid orange; /* Add the orange border */
+    margin: 0 20px; /* Adjust margins for centering */
+}
+
+.order-button:hover {
+    background-color: darkgreen;
+}
+
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust to bring it closer to the button */
+    flex-grow: 1; /* Ensures less space between items */
+}
+
+.rating-text {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #000;
+}
+
+.stars {
+    font-size: 20px;
+    color: gold;
+}
+
+/* Prevent the floating bar from overlapping other content */
+body {
+    padding-top: 60px; /* Adjust depending on the height of the floating bar */
+}
+
+/* Mobile-specific styling (max-width: 768px is already handled) */
+
+/* For larger screens like desktops */
+@media (min-width: 769px) {
+    .order-form input {
+        width: 60%; /* Adjust the width as per your design needs */
+        font-size: 18px; /* Set a comfortable font size */
+        padding: 10px; /* Add appropriate padding to make the input box look good */
+        box-sizing: border-box; /* Ensures padding doesn't distort the width */
+    }
+
+    /* Additional customization for desktop view */
+    .cta-button {
+        font-size: 22px; /* Slightly larger font for desktop */
+        padding: 12px 20px; /* Adjust padding to suit desktop */
+    }
+}
+
+
+
+/* For mobile view only */
+@media (max-width: 768px) {
+    .floating-bar .stars {
+        font-size: 5px; /* Decrease the size of the stars for mobile */
+    }
+
+    .floating-bar .rating-wrapper {
+        margin-left: 5px; /* Reduce margin to ensure all stars fit */
+    }
+
+    .floating-bar .order-button {
+        padding: 5px 10px; /* Reduce button padding to make space */
+    }
+
+    .floating-bar .offer {
+        font-size: 16px; /* Adjust the offer text size to fit better */
+        margin-right: 10px; /* Reduce margin to make more room */
+    }
+}
+
+
+
+
+/* For mobile view only */
+@media (max-width: 768px) {
+    .floating-bar .stars {
+        display: none; /* Hides the stars on mobile */
+    }
+}
+
+.green-text {
+    color: green;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cta-green-button {
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cta-green-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+    </style>
+<style>
+    .faq-section {
+        max-width: 800px;
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .faq-section h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .faq-item {
+        border-top: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    .faq-item:first-child {
+        border-top: none;
+    }
+
+    .faq-item label {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        margin: 5px 0;
+        position: relative;
+    }
+
+    .faq-item input[type="checkbox"] {
+        display: none;
+    }
+
+    .faq-item input[type="checkbox"]:checked + label {
+        background-color: #e0e0e0;
+    }
+
+    /* Change the + to - when checked */
+    .faq-item input[type="checkbox"]:checked + label::before {
+        content: "-";
+    }
+
+    /* Default + sign */
+    .faq-item label::before {
+        content: "+";
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .faq-item input[type="checkbox"]:checked + label + .faq-content {
+        max-height: 200px;
+        padding: 10px 0;
+    }
+
+    .faq-content p {
+        margin: 0;
+        padding: 0 10px;
+    }
+</style>
+<style>
+    .order-section {
+        text-align: center;
+        padding: 20px;
+        border: 2px dashed green;
+        margin: 20px auto;
+        max-width: 800px; /* Adjusted to fit the badge image */
+        background-color: #fff;
+    }
+
+    .order-section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .order-section p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .offer-price {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .offer-price .old-price {
+        color: red;
+        margin-left: 10px;
+    }
+
+    .order-form {
+        margin-bottom: 20px;
+    }
+
+.order-form label {
+    font-size: 22px; /* Increase font size for the label */
+    font-weight: bold; /* Optionally make it bold */
+    display: block;
+	margin-top:20px;
+}
+
+.order-form input {
+    font-size: 18px; /* Increase font size inside input boxes */
+    padding: 12px; /* Add padding for a better look */
+    width: 100%; /* Ensure the input takes the full width of its container */
+    box-sizing: border-box; /* Prevent input boxes from overflowing */
+}
+
+
+    .order-form button {
+        padding: 15px;
+        font-size: 25px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+@media (max-width: 768px) {
+    .order-form label {
+        font-size: 18px; /* Slightly smaller font size on mobile if needed */
+    }
+
+    .order-form input {
+        font-size: 22px; /* Larger font size for inputs */
+        padding: 15px; /* Increase padding for better touch interaction */
+        width: 80%; /* Ensure full width on mobile */
+    }
+
+    .cta-button {
+        font-size: 18px; /* Make the submit button text bigger */
+        padding: 15px; /* Add more padding for a better touch experience */
+    }
+}
+
+
+
+
+    .security-badges {
+        margin-bottom: 10px;
+    }
+
+    .security-badges img {
+        max-width: 100%;
+        height: auto; /* Ensure the image scales properly */
+    }
+
+    .disclaimer {
+        font-size: 30px; /* Adjust the font size as needed */
+        font-weight: bold;
+        color: #000000;
+    }
+
+    
+
+</style>
+<style>
+    .testimonials {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .testimonial-item {
+        width: 32%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+    }
+
+    .testimonial-item img {
+        max-width: 90%;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .testimonials {
+            flex-direction: column;
+        }
+
+        .testimonial-item {
+            width: 90%;
+        }
+    }
+
+    .offer-text {
+    font-size: 30px; /* You can adjust the size as needed */
+    font-weight: bold; /* Optional to make it bold */
+}
+
+.rating-container2 {
+    display: block;  /* Ensure it's a block element */
+    margin: 20px auto; /* Auto margins for horizontal centering */
+    text-align: center; /* Center the inline content inside */
+}
+
+
+    .rating-container {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .rating-text {
+            font-weight: bold;
+            color: black;
+            margin-right: 10px;
+text-align:center;
+        }
+
+        .stars {
+            display: inline-flex;
+            font-size: 24px;
+            color: #f4b400; /* Gold color */
+        }
+
+        .half-star::before {
+            content: '\2605'; /* Filled star */
+            position: absolute;
+            display: inline-block;
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .star-full::before {
+            content: '\2605'; /* Filled star */
+        }
+
+        .star-empty::before {
+            content: '\2606'; /* Empty star */
+        }
+
+        .rating-number {
+            font-size: 14px;
+            color: #666;
+            margin-left: 5px;
+        }
+        .offer-container {
+            text-align: center;
+        }
+
+        .offer-price {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .current-price {
+            color: green;
+            font-size: 32px;
+            border: 2px solid green;
+            padding: 5px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .old-price {
+            color: red;
+            font-size: 24px;
+            text-decoration: line-through;
+        }
+
+        .availability-container {
+            margin-top: 20px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .availability-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .remaining-stock {
+            background-color: orange;
+            color: white;
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        .progress-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin-left: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 40%; /* Adjust this percentage to reflect the stock availability */
+            background-color: orange;
+            border-radius: 5px 0 0 5px;
+        }
+</style>
+</head>
+<body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K57Z36WM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="floating-bar">
+    <div class="offer">ΠΡΟΣΦΟΡΑ ΤΗΣ ΗΜΕΡΑΣ→</div>
+    <div class="button-wrapper">
+        <a href="#order-form">
+        <button class="order-button">ΠΑΡΑΓΓΕΛΙΑ ΤΩΡΑ</button>
+        </a>
+    </div>
+    <div class="rating-wrapper">
+        <span class="rating-text">Μέση βαθμολογία 4,94 / 5</span>
+        <span class="stars">★★★★★</span>
+    </div>
+</div>
+
+<!---<div class="rating-container2">
+    <span class="rating-text">+10394 Ικανοποιημένοι Έλληνες</span>
+    <div class="stars">
+        <span class="star-full"></span>
+        <span class="star-full"></span>
+        <span class="star-full"></span>
+        <span class="star-full"></span>
+        <span class="half-star" style="position: relative;"></span>
+    </div>
+    <span class="rating-number">4,93/5</span>
+</div>---->
+
+<div class="container">
+    <div class="header">
+        <h1>Ο Δρ. Βασιλάκης Αποκαλύπτει Επιτέλους την Φόρμουλα κατά της Τριχόπτωσης</h1>
+        <h2 style="font-size: 35px;">Complex B+ Spray</h2>
+    </div>
+
+    <div class="offer-banner">
+        Η θεραπεία με Την κρυφή φόρμουλα για χρόνια για να αποκτήσετε ξανά πυκνά, ογκώδη μαλλιά
+(ακόμα και αν χάνετε τα μαλλιά σας)
+    </div>
+
+    <div class="product-section">
+        <div class="product-image">
+            <img src="images/1.png" alt="Complex B+ Spray">
+        </div>
+
+        <div class="product-info">
+
+<div class="offer-container">
+    <div class="offer-price">
+        ΠΡΟΣΦΟΡΑ ΣΤΑ <span class="current-price">39€</span>
+        <br>
+        ΑΠΟ <span class="old-price">78€</span>
+    </div>
+
+    <div class="availability-container">
+        ΔΙΑΘΕΣΙΜΟΤΗΤΑ ΠΟΥ ΑΠΟΜΕΝΕΙ
+    </div>
+
+    <div class="availability-bar">
+        <div class="remaining-stock">5 τεμάχια</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+</div>
+            
+ 
+            <ul class="features">
+                <li>Δημιουργία νέων τριχοθυλακίων</li>
+                <li>Ενίσχυση των υπαρχόντων μαλλιών</li>
+                <li>Εξάλειψη της τριχόπτωσης</li>
+                <li>100% φυσικό προϊόν</li>
+                <li>Μακροχρόνια αποτελέσματα</li>
+                <li>Αποτελέσματα από την πρώτη εβδομάδα χρήσης</li>
+                <li>Γρήγορη αποστολή σε 1-2 ημέρες</li>
+                <li>Πληρωμή κατά την παράδοση</li>
+            </ul>
+
+            <a href="#order-form" class="cta-button">ΕΝΕΡΓΟΠΟΙΗΣΤΕ ΤΗΝ ΠΡΟΣΦΟΡΑ👉 Παραγγείλετε τώρα και <u>πληρώστε κατά την παράδοση + ΓΡΗΓΟΡΗ ΠΑΡΑΔΟΣΗ</u></a>
+        </div>
+    </div>
+
+    <div class="next-section">
+        <h2 style="background-color: black; color: white;">
+  Το σπρέι για τα μαλλιά κατά της τριχόπτωσης γίνεται viral στο διαδίκτυο 😍
+</h2>
+        <div class="images">
+            <img src="images/2.gif" alt="Hair Loss Diagram" width="280" height="330">
+            <img src="images/3.jpg" alt="Before and After" width="400" height="330"> 
+        </div>
+        <p>Το ToZ Complex Spray είναι το μόνο προϊόν στην αγορά σήμερα που ΔΗΜΙΟΥΡΓΕΙ ΝΕΟΥΣ ΛΑΜΠΟΥΣ. Τα άλλα προϊόντα μπορούν να σταματήσουν την τριχόπτωση, αλλά δεν λύνουν οριστικά το πρόβλημα της αλωπεκίας.</p>
+        <p>Τώρα μπορείτε να πείτε αντίο στα κενά στο κεφάλι σας και στα μαλλιά που πέφτουν μέρα με τη μέρα. Με αυτό το προϊόν θα έχετε πυκνά μαλλιά όπως όταν ήσασταν 20!</p>
+        <p>Θα παρατηρήσετε από την πρώτη εβδομάδα:</p>
+
+        <ul class="benefits">
+            <li>Πυκνά μαλλιά και χωρίς τρύπες</li>
+            <li>Μαλλιά που δεν πέφτουν πια</li>
+            <li>Γεννιούνται νέοι βολβοί και άρα νέα μαλλιά</li>
+        </ul>
+
+        <div class="secret-tip">
+            Μικρό μυστικό: Εφαρμόστε τη λοσιόν δύο φορές την ημέρα (μία το πρωί και μία το βράδυ για ταχύτερα και μεγαλύτερης διάρκειας αποτελέσματα)
+        </div>
+
+        <a href="#order-form" class="cta-green-button">ΕΝΕΡΓΟΠΟΙΗΣΤΕ ΤΗΝ ΠΡΟΣΦΟΡΑ👉 Παραγγείλετε τώρα και <u>πληρώστε κατά την παράδοση + ΓΡΗΓΟΡΗ ΠΑΡΑΔΟΣΗ</u></a>
+    </div>
+
+    <div class="third-section">
+        <img src="images/4.gif" alt="Hair Loss Results 1" width="400" height="400">
+        <img src="images/5.gif" alt="Hair Loss Results 2" width="400" height="400">
+
+        <p class="offer">ΠΡΟΣΦΟΡΑ ΤΗΣ ΗΜΕΡΑΣ: Μόνο 39€ <del>αντί για 79€.</del></p>
+
+        <ul class="features">
+            <li>Βοηθά στη δημιουργία νέων τριχών και ενισχύει την υφή των μαλλιών</li>
+            <li>Προάγει την ανάπτυξη νέων τριχών από τη ρίζα τους</li>
+            <li>Μειώνει την τριχόπτωση και βοηθά στη διατήρηση της πυκνότητας των μαλλιών</li>
+            <li>Παρέχει θρέψη και ενυδάτωση στο τριχωτό, βελτιώνοντας την υγεία των μαλλιών</li>
+            <li>Γρήγορα και μακροχρόνια αποτελέσματα</li>
+            <li>Γρήγορη αποστολή και πληρωμή κατά την παράδοση</li>
+        </ul>
+    </div>
+
+    <div class="cta-footer">
+        +2399 Ικανοποιημένοι πελάτες δεν μπορούν να κάνουν λάθος
+    </div>
+
+    <!-- New Section for Customer Ratings and Testimonials -->
+    <div class="ratings-section">
+        <h2 class="ratings-header">2399 κριτικές 4,97/5</h2>
+        <div class="ratings-bar">
+            <div class="stars">5 αστέρια</div>
+            <div class="rating-bar-bg">
+                <div class="rating-bar-fill" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="ratings-bar">
+            <div class="stars">4 αστέρια</div>
+            <div class="rating-bar-bg">
+                <div class="rating-bar-fill" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="ratings-bar">
+            <div class="stars">3 αστέρια</div>
+            <div class="rating-bar-bg">
+                <div class="rating-bar-fill" style="width: 50%;"></div>
+            </div>
+        </div>
+        <div class="ratings-bar">
+            <div class="stars">2 αστέρια</div>
+            <div class="rating-bar-bg">
+                <div class="rating-bar-fill" style="width: 30%;"></div>
+            </div>
+        </div>
+        <div class="ratings-bar">
+            <div class="stars">1 αστέρι</div>
+            <div class="rating-bar-bg">
+                <div class="rating-bar-fill" style="width: 10%;"></div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+    <div class="testimonial-item">
+        <img src="images/testimonial1.png" alt="Testimonial 1">
+    </div>
+    <div class="testimonial-item">
+        <img src="images/testimonial2.png" alt="Testimonial 2">
+    </div>
+    <div class="testimonial-item">
+        <img src="images/testimonial3.png" alt="Testimonial 3">
+    </div>
+</div>
+
+
+
+<div class="order-section" id="order-form">
+    <h1>ΣΥΜΠΛΗΡΩΣΤΕ ΤΗ ΦΟΡΜΑ ΚΑΙ ΘΑ ΣΑΣ ΚΑΛΕΣΟΥΜΕ ΕΜΕΙΣ</h1>
+    <p class="offer-text">Επωφεληθείτε από την προσφορά -50% με ΓΡΗΓΟΡΗ ΑΠΟΣΤΟΛΗ και αντικαταβολή</p>
+
+
+    <div class="offer-price">
+    <span>ΣΕ ΠΡΟΣΦΟΡΑ ΤΩΡΑ ΜΟΝΟ ΣΤΑ <strong class="green-text">39€</strong></span>
+    <span class="old-price">ΑΠΟ <del>78€</del></span>
+</div>
+
+<form class="order-form" action="submit-form.php" method="post">
+    <label for="name">Όνομα και Επώνυμο <span class="required">*</span></label>
+    <input type="text" id="name" name="name" placeholder="Εισάγετε το πλήρες όνομά σας" required="">
+
+    <label for="phone">Τηλέφωνο (Κινητό Τηλέφωνο) <span class="required">*</span></label>
+    <input type="tel" id="phone" name="phone" placeholder="Εισάγετε τον αριθμό τηλεφώνου σας" required="">
+
+    <!-- Hidden field for clickid -->
+    <input type="hidden" id="clickid" name="clickid" value="">
+
+    <button type="submit" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">ΟΛΟΚΛΗΡΩΣΤΕ ΤΗΝ ΠΑΡΑΓΓΕΛΙΑ ➡</button>
+</form>
+
+
+
+
+    <div class="security-badges">
+        <img src="images/badge-logos.jpg" alt="Security and Guarantee Badges">
+        <p>Κρυπτογράφηση SSL 256-bit</p>
+    </div>
+
+    <p class="disclaimer">Η συμπλήρωση της φόρμας δεν σας υποχρεώνει να αγοράσετε*</p>
+</div>
+
+
+
+<div class="faq-section">
+    <h2>ΔΙΑΒΑΣΤΕ ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ</h2>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq1">
+        <label for="faq1">Πώς μπορώ να παραγγείλω το προϊόν?</label>
+        <div class="faq-content">
+            <p>Απλώς συμπληρώστε την επίσημη φόρμα και καταχωρίστε τα απαιτούμενα στοιχεία, όπως το όνομα, το επώνυμο και τον αριθμό τηλεφώνου σας. Η υπηρεσία εξυπηρέτησης πελατών θα επικοινωνήσει μαζί σας τηλεφωνικά για να επιβεβαιώσει την παραγγελία σας και τη διεύθυνση αποστολής. Εντός 48 εργάσιμων ωρών θα παραλάβετε το προϊόν στη διεύθυνση που θα σας υποδείξουμε, πληρώνοντας με αντικαταβολή.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq2">
+        <label for="faq2">Ποιοι είναι οι Χρόνοι Αποστολής?</label>
+        <div class="faq-content">
+            <p>Τα προϊόντα αποστέλλονται εντός 48 ωρών μετά την επιβεβαίωση της παραγγελίας και η παράδοση μπορεί να διαρκέσει 2-5 εργάσιμες ημέρες, ανάλογα με τον προορισμό.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq3">
+        <label for="faq3">Μπορώ να πληρώσω για το προϊόν κατά την παράδοση?</label>
+        <div class="faq-content">
+            <p>Ναι, μπορείτε να πληρώσετε για το προϊόν κατά την παράδοση μέσω αντικαταβολής.</p>
+        </div>
+    </div>
+</div>
+
+</div></div></body></html>
